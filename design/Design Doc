@@ -1,0 +1,34 @@
+#######################
+### Design Document ###
+#######################
+
+
+# OVERVIEW #
+
+This game is split into what is essentially the MVC format we learned in class except for very small number of exceptions due to the convenience it had versus the time constraints. That said, there were several major issues I faced in attempting this term project.
+
+
+# PROBLEMS AND SOLUTIONS #
+
+First, the largest issue is the fact that I went for a relatively ambitious, high-fidelity, fast-paced and high-precision game with python, an interpretted language. The largest issue in terms of efficiency and general computing speeds I faced was the need to render and move large numbers of sprites and surfaces spontaneously and without delay or lag. Unfortunately, even with every possible form of optimization I could think of (granted, only 112 level knowledge) I still cannot make this program run smoothly on anything short of a gaming desktop. However, for what I did manage to do to combat Python's inherent overhead is that I first pre-render and store every sprite I will need in variables as to not require the computing power in-game where high-responsiveness and accuracy are crucial. Though pre-rendering can solve the issue of the creation of the sprites themselves, I still need to load, draw and update them in-game, naturally. For this, I used a threadpool to allow for more efficienct usage of the available computing power and also to allow the main game thread to run relatively unperturbed from demanding calculations.
+
+A second issue I faced was the actual coding and conceptualizing how to write this. Due to the fact that a large portion of this program is "hardcoded" in the sense that enemies are pre-determined and their shot-patterns are also pre-determined, I had to think of a way to code up a sort of "API" to allow for easy coding of the enemies and the stage in general. This was aided in part by separating major functions within their own files such as gui, level information, sprites, sounds, etc. This allows for an easy, organized and accessible form of coding both in debugging and general coding aesthetics. The main accomplishment in this issue is the fact that though I did not have much of a "level" for a large majority of the term project period as I was working on the pseudo-API of sorts, I was able to code up a full level in just a day due to the diligent and thorough method in which I implemented this system.
+
+A final issue I faced was the overall unfamiliarity in this territory. As the only experience I have had with GUI in general are the homework assignments for 112, it was interesting to be forced to think up of solutions to real problems I came across in terms of working gui. It was even more interesting to google other solutions after I had come up with my own to see how others might do it and learn better ways to do it (and ways to DEFINITELY not code it). 
+
+# PROGRAM DESIGN #
+
+Though covered briefly in the previous section, the overall design of this program is simple. I have a single "game class" that handles the entire thing with a multitude of subclasses and other classes that get fitted in much like interchangeable parts in a large machine. I like to think of the different files with less code that serve a specific purpose such as the bullets.py file which handles the creation of shot patterns to be like a modular gadget I can hook into my big machine, the game class. That said the main game class is split essentially into just three lines. Increase the tick, update events and then redraw.
+
+self.ticks += 1
+self.events()
+self.redrawAll()
+
+Literally three lines.
+
+Each major part of the game such as the levels and sprites also have their own files. Organizing sprites in one file has an obvious advantage of being able to organize and clump all the visual graphics in one place. With the level, the code is complex and voluminous enough that having it with the main file would only cause clutter with something that didn't serve one of the two primary purposes, updating events and redrawing.
+
+Basically, every portion of the code works similarly to the game class and its modules in that I also have submodules within the modules, albeit in the same file and so on and so forth. It's sort of like a tree branching out.
+
+
+

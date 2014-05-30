@@ -1,0 +1,3 @@
+Provide richer instructions.
+Add more features to make it "gamelike". Currently only impressive as a programmer, not as a consumer
+Graphics look polished and pleasing.

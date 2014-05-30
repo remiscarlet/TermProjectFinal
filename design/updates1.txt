@@ -1,0 +1,12 @@
+
+
+Homing amulets.
+Minor performance improvements
+Game window
+Auto-collect line
+Tons of bug fixes
+Working on level creation/rendering/processing/etc
+Backgrounds
+Level creation
+Dynamic enemy creation and timing-based spawning
+lots of multithreadings

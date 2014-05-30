@@ -1,0 +1,103 @@
+4/9/14: Total time spent - 1.5 hour
+	Started working on the project by completing deliverable one. Exciting. Oh, I'm keeping a journal on top of the timesheet. Wheee. I never thought I'd actually get to work on something even vaguely Touhou related on an academic project. This is exciting!
+
+4/10/14: Total time spent - 1.5 hour
+	Working on file I/O and config/file verification to make sure the files we're reading from aren't like, broken. So exciting. I haven't done file I/O in a bit so this was pretty fun unrusting my brain.
+
+4/10/14: Total time spent - 1 hour
+	Finally started working on actual graphics and whatnot. Mostly reading docs and tutorials on the web, but some coding as well. Pygame is definitely much different than tkinter so it's going to take a bit to get used to rethinking how things will work
+
+4/10/14 - Later: Total time spent - 2.5 hours
+	Agh, menus. Also, getting some skeleton structures of the backend coded up in terms of how the game will handle different states such as while on the menu, playing, option screen, etc.
+	HOLY SHIT I GOT SPRITES WORKING AAAAAAAAAAAAAAAAAAAAAA
+	HOLY SHIT I GOT HIGHLIGHTED BUTTONS AND HIGHLIGHTED SCROLLING WORKING AAAAAAAAAAAAAAAAAAAAAA
+	Oh, system independant filepaths. Wheeee
+
+4/11/14: Total time spent - 3 hour
+	SOUNDS WHEEEEE
+	Menu scrolling and selecting new interfaces
+	Trying to get game "start" working with animated sprites - WORKS
+	Made helper funcs for music playing to allow ease of changing tracks
+	AAAHHHH I GOT MY CHARACTER TO MOVE AND SHOOT AND AFASDFAS (now to worry about hitbox detection *sigh*)
+
+4/12/14: Total time spent - 4.5 hour
+	Reworked bullet sprite to account for angles and to travel accordingly to the angles
+	Created a helper func that will clear any bullets off-screen when called. This is going to be super useful.
+	Got enemy sprites and collision detection working
+	Enemies can shoot randomly now!
+	Enemy shots aim towards player (math.atan seems to be a bit inaccurate though.)
+	Started working on the "homing amulet" shot-type. Doesn't work at all atm. Lol. *cries in corner*
+
+4/13/14: Total time spent - 1 hour
+	Homing amulets suck.
+
+4/14/14: Total time spent - 1 hour
+	Aaaa 41414. Started actually making the GUI
+
+4/15/14: Total time spent - 2 hour
+	AAAA GOT THE FUCKING AMULETS TO HOME IN CORRECTLY FUCK YOU ATAN RETURNING RADIANS
+	Seeming to hit a bit of a roadblock on performance issues. Stupid interpretted languages.
+
+4/19/14: Total time spent - 1 hour
+	Oops. Forgot to take note of how long I worked on this the past couple of days. Wheee.
+
+4/20/14: Total time spent - 5 hours
+	Reworking stuff to account for power level, shot patterns, minor tweaks in background, adding scores and stuff. Mostly GUI related stuffs
+	Added auto-collect line. Should probably work on non-mechanic stuff next. Pause menus, in-game config editing, etc. -an hour later- Nah. More mechanics.
+
+4/21/14: Total time spent - 3 hour
+	HOLY FUCK I FIXED THAT STUPID BULLET MOVING IN A GRID BUG YEAH FUCK YOU RECTS, YOU DON'T SUPPORT SUBPIXEL ACCURACY AND ROUND SHIT
+	aaaaaaaaaa started working on level pre-rendering and stuff.
+
+
+4/22/14: Total time spent - 3 hours
+	Started working on background, at least the concepts for it. Mostly brainstorming
+	Tried to work a bit more on optimization. Pygame sucks.
+
+4/23/14: Total time spent - 3 hours
+	Background rendering is going pretty well. Got the tree thing to work.
+	Got a gradient overlay for some shitty perception of "depth" with darkness.
+	Aaaaaaa I can't get the damn background to align correctly. I hate life.
+
+4/24/14: Total time spent - 2 hours
+	Got an actually working "api" sort of thing for level creation. Can actually spawn stuff based off of timing and dynamic enemies
+
+4/25/14: Total time spent - 5 hours
+	Continuing working on the level creation. Sprite creation now uses kwargs for even more versatility in options. One thing I'm pretty proud of is that when spawning enemies, I do so on a separate thread with its own timer tick so I can spawn them based on delays I supply to the args. Eg, if I have a list of 10 enemies that I want to spawn at 20 tick intervals, I can supply like [(sprite, 20), (sprite2,20)...] etc and it'll spawn them with the supplied delay arg. Pretty cool, I think.
+	Fixed that not-overlapping background lol. Turns out I just can't do math correctly. You'd think a college-level student with a decent math background would be able to do some basic arithmetic correctly.
+	More dynamic enemy spawning.
+	Started work on curve-based movement using polynomial class from hw9
+
+4/26/14: Total time spent - 4 hours
+	Multiple bullet types and enemies. Added a shot pattern as well.
+	Changed how sprite deletion works to allow for more flexibility
+	Fixed a lot of bugs with level generation
+	Added bullet hitboxes cuz buggy
+	
+4/27/14: Total time spent - 3 hours
+	I forgot to take notes again and idr. Wheeee
+
+4/28/14: Total time spent - 5 hours
+	Lol finally got a pause menu
+	PYTHON SUCKS MY SHOTPATTERNS ARE LITERALLY LIMITED BY HOW SLOW PYTHON IS. FUCK.
+	AAAHHHHH MULTITHREADED ANIMATED LOADING SCREEN THAT TOOK WAY LONGER TO FIGURE OUT THAN IT SHOULD HAVE AHAHAHAHA
+	Oh, and resizable screens. Maybe I should like... work on a usable option menu... meh.
+
+4/29/14: Total time spent - 1 hour
+	ahhhh options menu thing
+
+4/30/14-5/1/14: Total time spent - 18 hours
+	Death animation.
+	Instructions.
+	Played a bit with hitbox detection
+	TRYING TO ADD A BOSS NOPE
+	Added level text
+	Pause menu
+	Gameover screen
+	More GUI information
+	More instructions
+	...I have something resembling a boss. Holy shit.
+	BOSS DIALOGUE WORKING
+	FOUR "SPELLCARDS" FOR BOSS
+	GAME WIN SCREEN
+	I THINK THIS GAME IS DONE RIGHT ABOUT HERE

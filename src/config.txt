@@ -1,0 +1,14 @@
+
+###Config###
+
+Screen Size: 640x480
+BGM: 20
+SFX: 18
+Keybindings:
+	Up: K_UP
+	Down: K_DOWN
+	Left: K_LEFT
+	Right: K_RIGHT
+	Shoot: K_z
+	Bomb: K_x
+	Focus: K_LSHIFT

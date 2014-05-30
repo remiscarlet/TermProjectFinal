@@ -1,0 +1,38 @@
+Proposal:
+	The minimum deliverable project I intend on completing for my term project is a recreation of the popular Japanese indie bullet-hell 'shmup' series, Touhou. The primary problems with this term idea is that I must first be able to create a rich visual experience as that is one of the hallmarks of Touhou. To complete this task, I will be utilizing the PyGame module's powerful graphics capabilities and pre-existing sprites from the original content themselves. Aside from this, there are efficiency issues I will likely need to worry about as there can quite literally be several hundred unique bullets on the screen at the same time and lag will be very noticeable and have a negative impact on user experience. For this, I'll likely be utilizing our knowledge of Big O. Once all of these are complete, I would like to have my end-goal of this term project to include a comprehensive and easy-to-use level-editor.
+
+Competetive Analysis:
+	As the main line of Touhou games now have 14 titles with several side-games, I will primarily be focusing on the official games. However, as there are an entire sub-genre of games created using an engine called "danmaku-fu", an engine specifically created to allow creation of games in-line with the Touhou series.
+
+	Desirable Features:
+		1)
+			From: Touhou 8 - Imperishable Night
+			What: Elongated death-bomb time window.
+			Why: 
+				While shorter windows of opportunities for death-bombs provide for more difficult and compelling gameplay, for the majority of people the ~0.1 second window of time for a death bomb proves to be basically non-existant and can waste remaining bombs
+		2)
+			From: Touhou 8 - Imperishable Night
+			What: Grazing mechanic
+			Why: 
+				Grazing is the act of purposely getting close to bullets and "grazing" them. This provides 	bonus score for the risk-factor and provides a fun and rewarding difficulty increase for 	those who wish to try for it
+		3)
+			From: Touhou 11 - Subterannean Animism
+			What: Bombs use power levels
+			Why: 
+				This mechanic forces players to consider the usage of their bombs as using them directly affects their gameplay by decreasing their bullet output and makes it harder for them to survive. At the same time, it allows for players to use more than just the standard 3 bombs like in most games and acquisition of more bombs is relatively easy compared to other games.
+	Undesirable Features:
+		1)
+			From: Touhou 6 - Embodiment of Scarlet Devil & Touhou 7 - Perfect Cherry Blossom
+			What: Lack of Auto Collect Line
+			Why: 
+				This game mechanic introduced in Touhou 8 allows for players to collect all items on-screen by moving their player above a certain line on the screen. This allows for quick collection of items on the screen after a batch of enemies, but also allows for deeper gameplay through quick calculations on the risk and gain of entering a more dangerous part of the screen but being able to collect powerups and such in one fell swoop.
+		2) 
+			From: All games
+			What: Lack of ability to save game and quit
+			Why: 
+				While it's arguable that this isn't practicle for a game of this genre, gamesaves are a basic functionality of games that have become a standard and are expected from most, if not all, modern games. Adding this feature would be great for those who might want to play on-the-go and might have to close or move their computers semi-often.
+		3)
+			From: All games
+			What: Windows only compatibility
+			Why: 
+				Cross-platform capabilities is beautiful.
