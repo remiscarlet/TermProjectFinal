@@ -25,3 +25,13 @@ This code was written with python 2.7. Quick testing with py3 seems to suggest t
 The only dependancy that doesn't come with a default python installation is pygame. Please install that.
 
 To run, simply run the main.py file and you should be good to go.
+
+##############################
+##### POST-SEMESTER NOTE #####
+##############################
+
+Please note that this entire thing was written in a limited time period and a vast majority of the code written near the end was done in... well, a rush. That said, my style and coding practices in general deteriorate as the code becomes newer in chronology. While it is not summer and I do technically have the time to fix stuff up, I believe that I should keep the code I submitted as my final submition intact and as-is. This game was not created to impress the average internet denizen. It was created as a project to demonstrate my understanding and mastery of the material taught in the course. That said I believe it's a bit pointless to then go and change the code to "polish it up" or the like. 
+
+While this is still better than my "other" project on github, there's still a million things I think I could have done better. Hopefully my next endeavor isn't time-restricted and I'll be able to fully use the knowledge I've gained in the short semester I took 15-112 at CMU. Here's to hoping for a brighter future for my coding antics :)
+
+Thanks!
