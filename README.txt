@@ -6,6 +6,12 @@ Hi! If you're reading this, you're probably either one of two groups of people. 
 
 This is, to put it simply, my (Yuto Takamoto's) 15-112 term project. This is an attempt to recreate an extremely popular Japanese indie game series, Touhou. Do note however that due to Python and Pygame's efficiency issues, there IS a HUGE limitation on how much I could actually do with this rendition. Even with pre-loading every sprite and multithreading several CPU-intensive portions of code, the program will still very noticeably lag on most computers. My personal desktop is a mid-high end gaming desktop from mid 2013. That said, while a 4.2ghz quad AMD A10-5800k is enough to run this sucker at (relatively) full FPS (60), most computers probably will not be able to.
 
+##########################
+### PROJECT VIDEO LINK ###
+##########################
+
+https://vimeo.com/93531627
+
 #######################
 ### AKNOWLEDGEMENTS ###
 #######################
